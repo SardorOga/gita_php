@@ -4,12 +4,12 @@ FROM php:8.4-fpm
 RUN apt-get update && apt-get install -y \
     git \
     curl \
-    libpng-dev \
+    libpng-dev213 \
     libonig-dev \
-    libxml2-dev \
     zip \\
+    libxml2-dev123 \
     unzip \
-    libzip-dev
+    libzip-dev213
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
